@@ -58,10 +58,10 @@ header .search .search_text {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
-header .search .search_text_focus {
+header .search .search_text.focus {
   width: 140px;
   height: 20px;
   border-radius: 6px;
@@ -69,10 +69,8 @@ header .search .search_text_focus {
 
 header .search .material-icons {
   position: absolute;
+  top: 1px;
   right: 0;
-  background-color: #fff;
-  border: 1px solid #999999;
-  border-radius: 6px;
   cursor: pointer;
 }
 
@@ -265,7 +263,10 @@ header .main_menu .item_contents .text_contents .text > p{
   margin-left: 100px;
   font-weight: bold;
 }
+.bg_line_notice .line_notice_left .inner .material-icons{
+  color: #fff;
 
+}
 .bg_line_notice .line_notice_right {
   width: 48%;
   background-color: #f6f5f0;
@@ -280,8 +281,13 @@ header .main_menu .item_contents .text_contents .text > p{
 }
 
 .bg_line_notice .line_notice_right .inner h4 {
-  display: block;
   font-size: 18px;
   font-weight: bold;
   margin-left: 120px;
 }
+
+.bg_line_notice .line_notice_right .inner .material-icons {
+  margin-left: 50px;
+
+}
+
