@@ -51,14 +51,13 @@ header .sub_menu li:last-child::after  {
   content: "";
 }
 header .search {
-  position:relative;
+  position: relative;
 }
 
 header .search .search_text {
   width: 20px;
   height: 20px;
   border-radius: 6px;
-  /* opacity: 0; */
 }
 
 header .search .search_text.focus {
@@ -286,8 +285,28 @@ header .main_menu .item_contents .text_contents .text > p{
   margin-left: 120px;
 }
 
-.bg_line_notice .line_notice_right .inner .material-icons {
-  margin-left: 50px;
-
+.bg_line_notice .line_notice_right .inner .arrow_circle_down,
+.bg_line_notice .line_notice_right .inner .arrow_circle_up {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  cursor: pointer;
 }
 
+.bg_line_notice .line_notice_right .inner .arrow_circle_down.invisible,
+.bg_line_notice .line_notice_right .inner .arrow_circle_up.invisible{
+  display: none;
+}
+
+/* section - 3 */
+.promotion {
+  display: none;
+  height: 0;
+}
+
+.promotion.visible {
+  display: block;
+  position: relative;
+  height: 500px;
+  background-color: #000;
+}
