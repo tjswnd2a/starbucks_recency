@@ -36,3 +36,29 @@ arrow_toggleBtn.addEventListener('click', function(){
 
   }
 })
+
+new Swiper('.bg_line_notice .swiper', {
+  direction: 'vertical',
+  // autoplay: true,
+  loop: true,
+  touchRatio: 0,
+  autoplay: {
+    delay: 1000,
+    disableOnInteraction: false,
+  }
+});
+
+new Swiper('.promotion .swiper', {
+  direction: 'horizontal',
+  slidesPerView: 3,
+  spaceBetween: 10,
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 5000
+  },
+  pagination: {
+    el: '.promotion .swiper-pagination', // 페이지 번호 요소 선택자
+    clickable: true // 사용자가 페이지 번호 요소 제어
+  }
+});

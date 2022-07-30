@@ -58,6 +58,7 @@ header .search .search_text {
   width: 20px;
   height: 20px;
   border-radius: 6px;
+  transition: width .4s;
 }
 
 header .search .search_text.focus {
@@ -252,6 +253,7 @@ header .main_menu .item_contents .text_contents .text > p{
   height: 100%;
   margin-right: 0;
   align-items: center;
+  overflow: hidden;
 }
 
 .bg_line_notice .line_notice_left .inner h4 {
@@ -262,7 +264,20 @@ header .main_menu .item_contents .text_contents .text > p{
   margin-left: 100px;
   font-weight: bold;
 }
+.bg_line_notice .line_notice_left .inner .swiper{
+  height: 64px;
+  flex-grow: 1; 
+}
+.bg_line_notice .line_notice_left .inner .swiper .swiper-slide{
+  display: flex;
+  height: 50px;
+  color: #fff;
+  align-items: center;
+  margin-left: 30px;
+}
 .bg_line_notice .line_notice_left .inner .material-icons{
+  position: absolute;
+  right: 40px;
   color: #fff;
 
 }
@@ -302,11 +317,35 @@ header .main_menu .item_contents .text_contents .text > p{
 .promotion {
   display: none;
   height: 0;
+  transition: .4s;
+
 }
 
 .promotion.visible {
-  display: block;
+  display: flex;
   position: relative;
-  height: 500px;
-  background-color: #000;
+  height: 700px;
+  background-color: #f6f5ef;
+}
+
+.promotion .swiper {
+  width: calc(819px * 3 + 20px);
+  height: 553px;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: calc((819px * 3 + 20px) / -2);
+}
+.promotion .swiper .swiper-slide{
+  opacity: .5;
+}
+.promotion .swiper .swiper-slide-active{
+  opacity: 1;
+}
+
+/* section - 4 */
+
+.rewards .rewards_bg{
+  background-color: #1e3932;
+  height: 250px;
 }
