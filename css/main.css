@@ -1,5 +1,5 @@
-body{
-
+body {
+  height: 5000px;
 }
 
 .inner {
@@ -8,7 +8,7 @@ body{
   margin: 0 auto;
 }
 
-a{
+a {
   text-decoration: none;
   color: black;
 }
@@ -18,7 +18,7 @@ header {
   border-bottom: 1px solid #c8c8c8;
 }
 
-header >.inner {
+header>.inner {
   height: 120px;
 }
 
@@ -36,20 +36,24 @@ header .sub_menu {
   right: 0;
   top: 5px;
 }
-header .sub_menu ul{
+
+header .sub_menu ul {
   margin-top: 4px;
   display: flex;
 }
 
-header .sub_menu li{
+header .sub_menu li {
   padding: 0 10px 10px 0;
 }
+
 header .sub_menu li:after {
   content: "|";
 }
-header .sub_menu li:last-child::after  {
+
+header .sub_menu li:last-child::after {
   content: "";
 }
+
 header .search {
   position: relative;
 }
@@ -122,10 +126,10 @@ header .main_menu .item_contents .menu_contents a:hover {
 }
 
 header .main_menu .item_contents .menu_contents .inner {
-  display:flex;
+  display: flex;
 }
 
-header .main_menu .item_contents .menu_contents li{
+header .main_menu .item_contents .menu_contents li {
   width: 280px;
   margin-bottom: 10px;
 }
@@ -135,18 +139,18 @@ header .main_menu .item_contents .text_contents {
   background-image: url("../images/main_menu_pattern.jpg");
 }
 
-header .main_menu .item_contents .text_contents .text{
+header .main_menu .item_contents .text_contents .text {
   padding: 35px 0 35px 0;
 }
 
-header .main_menu .item_contents .text_contents .text > h4{
+header .main_menu .item_contents .text_contents .text>h4 {
   color: #999999;
   font-size: 700;
-  margin-top:7px;
+  margin-top: 7px;
 
 }
 
-header .main_menu .item_contents .text_contents .text > p{
+header .main_menu .item_contents .text_contents .text>p {
   color: #669900;
   margin: 3px 0 7px 0;
 }
@@ -166,39 +170,42 @@ header .main_menu .item_contents .text_contents .text > p{
 .main_visual_warp .find_teste,
 .main_visual_warp .drink_one,
 .main_visual_warp .drink_two,
-.main_visual_warp .drink_three{
+.main_visual_warp .drink_three {
   position: absolute;
 }
+
 .main_visual_warp .find_teste {
   top: 140px;
   left: -120px;
 }
 
-.main_visual_warp .find_teste button{
+.main_visual_warp .find_teste button {
   width: 120px;
   height: 35px;
-  display:block;
+  display: block;
   margin: 50px auto;
   background-color: #c2d52f;
   border: 1px solid #fff;
   border-radius: 6px;
   color: #fff;
 }
-.main_visual_warp .find_teste button:hover{
+
+.main_visual_warp .find_teste button:hover {
   background-color: #fff;
   color: #c2d52f;
 }
 
-.main_visual_warp .drink_one{
+.main_visual_warp .drink_one {
   top: 40px;
   left: 240px;
 }
-.main_visual_warp .drink_two{
+
+.main_visual_warp .drink_two {
   top: 90px;
   left: 440px
 }
 
-.main_visual_warp .drink_three{
+.main_visual_warp .drink_three {
   top: 40px;
   left: 730px
 }
@@ -217,12 +224,13 @@ header .main_menu .item_contents .text_contents .text > p{
 .main_visual_warp .bg_area .bg_right {
   height: auto;
 }
-.main_visual_warp .bg_area .bg_left{
+
+.main_visual_warp .bg_area .bg_left {
   width: 52%;
   background-color: #c2d52f;
 }
 
-.main_visual_warp .bg_area .bg_right{
+.main_visual_warp .bg_area .bg_right {
   width: 48%;
   background-color: #87c9e2;
 }
@@ -233,7 +241,7 @@ header .main_menu .item_contents .text_contents .text > p{
   width: 100%;
   height: 70px;
   position: relative;
-  display:flex;
+  display: flex;
 }
 
 .bg_line_notice .line_notice_left,
@@ -247,7 +255,7 @@ header .main_menu .item_contents .text_contents .text > p{
   background-color: #000;
 }
 
-.bg_line_notice .line_notice_left .inner{
+.bg_line_notice .line_notice_left .inner {
   display: flex;
   width: 700px;
   height: 100%;
@@ -264,29 +272,33 @@ header .main_menu .item_contents .text_contents .text > p{
   margin-left: 100px;
   font-weight: bold;
 }
-.bg_line_notice .line_notice_left .inner .swiper{
+
+.bg_line_notice .line_notice_left .inner .swiper {
   height: 64px;
-  flex-grow: 1; 
+  flex-grow: 1;
 }
-.bg_line_notice .line_notice_left .inner .swiper .swiper-slide{
+
+.bg_line_notice .line_notice_left .inner .swiper .swiper-slide {
   display: flex;
   height: 50px;
   color: #fff;
   align-items: center;
   margin-left: 30px;
 }
-.bg_line_notice .line_notice_left .inner .material-icons{
+
+.bg_line_notice .line_notice_left .inner .material-icons {
   position: absolute;
   right: 40px;
   color: #fff;
 
 }
+
 .bg_line_notice .line_notice_right {
   width: 48%;
   background-color: #f6f5f0;
 }
 
-.bg_line_notice .line_notice_right .inner{
+.bg_line_notice .line_notice_right .inner {
   display: flex;
   width: 400px;
   height: 100%;
@@ -309,7 +321,7 @@ header .main_menu .item_contents .text_contents .text > p{
 }
 
 .bg_line_notice .line_notice_right .inner .arrow_circle_down.invisible,
-.bg_line_notice .line_notice_right .inner .arrow_circle_up.invisible{
+.bg_line_notice .line_notice_right .inner .arrow_circle_up.invisible {
   display: none;
 }
 
@@ -336,16 +348,189 @@ header .main_menu .item_contents .text_contents .text > p{
   left: 50%;
   margin-left: calc((819px * 3 + 20px) / -2);
 }
-.promotion .swiper .swiper-slide{
+
+.promotion .swiper .swiper-slide {
   opacity: .5;
 }
-.promotion .swiper .swiper-slide-active{
+
+.promotion .swiper .swiper-slide-active {
   opacity: 1;
 }
 
 /* section - 4 */
 
-.rewards .rewards_bg{
+.rewards .rewards_bg {
   background-color: #1e3932;
   height: 250px;
+}
+
+/* rewards section */
+.rewards .rewards_bg .inner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.rewards .rewards_bg .inner .starbuck_rewads_logo {
+  width: 172px
+}
+
+
+.rewards .rewards_bg .inner .rewards_content h4,
+.rewards .rewards_bg .inner .rewards_content p {
+  color: #fff;
+  padding: 5px;
+  line-height: 25px;
+}
+
+.rewards .rewards_bg .inner .rewards_content p strong {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.rewards .rewards_bg .inner .rewards_content h4 strong {
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.rewards .rewards_bg .inner .rewards_content {
+  position: absolute;
+  right: 0;
+}
+
+.rewards .rewards_bg .inner .rewards_content .starbucks_member {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #999999;
+
+}
+
+.rewards .rewards_bg .inner .rewards_content .starbucks_member .rewards_sign_up {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.rewards .rewards_bg .inner .rewards_content .starbucks_member .rewards_sign_up .sign_up_btn {
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  border: 1px solid #00704a;
+  background-color: #00704a;
+  ;
+  border-radius: 6px;
+  cursor: pointer;
+
+}
+
+.rewards .rewards_bg .inner .rewards_content .starbucks_member .rewards_sign_up .sign_up_btn:hover {
+  text-decoration: underline;
+}
+
+.rewards .rewards_bg .inner .rewards_content .starbucks_member .rewards_sign_up .log_in_btn {
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background-color: #1e3932;
+  cursor: pointer;
+}
+
+.rewards .rewards_bg .inner .rewards_content .starbucks_member .rewards_sign_up .log_in_btn:hover {
+  text-decoration: underline;
+}
+
+.rewards .rewards_bg .inner .rewards_content .rewards_text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rewards .rewards_bg .inner .rewards_content .rewards_text .gift_btn {
+  height: 35px;
+  right: 0;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background-color: #1e3932;
+  margin-left: 20px;
+}
+
+/* season - section */
+.season_coffee {
+  width: 100%;
+  height: 572px;
+  background-image: url("../images/2022_Summer2_bean_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.season_coffee .inner {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.season_coffee .season_bean {
+  position: absolute;
+  left: 150px;
+}
+
+.season_coffee .bean_content {
+  position: absolute;
+  right: 30px;
+}
+
+.season_coffee .bean_content button {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 10px 30px 10px 30px;
+  margin-top: 60px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  /* transition: 1s; */
+  font-size: 20px;
+}
+
+.season_coffee .bean_content button:hover {
+  transition: .8s;
+  background-color: #fff;
+  color: #085958;
+}
+
+/* section - indonesia */
+.bean_place {
+  height: 300px;
+  background-image: url("../images/reserve_2022_indonesia_visual3.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bean_place img {
+  margin-top: 60px;
+}
+
+/* section - favorite */
+.coffee_favorite {
+  /* display: flex; */
+  /* height: 800px; */
+  background-image: url("../images/favorite_bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.coffee_favorite .favorite_content {
+  width: 362px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  background-color: #000;
+}
+
+.coffee_favorite .favorite_content img {
+  /* display: block; */
+  /* float: right; */
 }

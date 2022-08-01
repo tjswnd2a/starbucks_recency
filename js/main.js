@@ -13,6 +13,7 @@ search_inputEl.addEventListener('focus', function() {
 search_inputEl.addEventListener('blur', function() {
   search_inputEl.classList.remove('focus');
   search_inputEl.setAttribute('placeholder','');
+  search_inputEl.setAttribute('value','');
 });
 
 const arrow_toggleBtn = document.querySelector('.arrow_toggle');
